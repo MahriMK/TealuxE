@@ -1,0 +1,20 @@
+.blockquote {
+  &__text {
+    @extend %cormorant-light;
+    text-align: center;
+    font-size: 40px;
+    line-height: normal;
+    max-width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-l) {
+  .blockquote {
+    &__text {
+      font-family: "Open Sans";
+      font-size: 16px;
+      max-width: 376px;
+    }
+  }
+}
