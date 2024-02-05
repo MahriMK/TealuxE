@@ -1,0 +1,53 @@
+.prioritise {
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px 49px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__text--bold {
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .prioritise {
+    &__list {
+      gap: 30px 100px;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .prioritise {
+    &__list {
+      gap: 50px;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .prioritise {
+    &__text {
+      font-size: 20px;
+    }
+
+    &__text--bold {
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
